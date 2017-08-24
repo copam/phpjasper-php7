@@ -78,7 +78,7 @@ Agora rode novamente o comando `javac -version` e veja se deu tudo certo.
 Instale o [Composer](http://getcomposer.org), e rode o comando:
 
 ```
-composer require geekcom/phpjasper
+composer require copam/phpjasper7
 ```
 
 Ou crie um arquivo 'composer.json' e adicione o trecho:
