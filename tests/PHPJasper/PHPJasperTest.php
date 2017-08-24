@@ -1,8 +1,9 @@
 <?php
 
-namespace PHPJasper;
+namespace Test;
 
 use PHPUnit\Framework\TestCase;
+use PHPJasper\PHPJasper;
 
 final class PHPJasperTest extends TestCase
     /**
@@ -14,8 +15,6 @@ final class PHPJasperTest extends TestCase
      */
 {
     private $PHPJasper;
-    private $input;
-    private $output;
 
     public function setUp()
     {

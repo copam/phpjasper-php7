@@ -5,16 +5,13 @@
 [![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%207.1-blue.svg?style=flat-square)](https://php.net/)
 [![License](https://poser.pugx.org/geekcom/phpjasper/license)](https://packagist.org/packages/geekcom/phpjasper) 
 
-### Documentação
-[![Language-en_US](https://img.shields.io/badge/en__US-100%25-green.svg)](https://github.com/PHPJasper/phpjasper/blob/master/README.md)
-
 ### Sobre a biblioteca
 
 PHPJasper é a solução perfeita para compilar e processar relatórios Jasper (.jrxml & .jasper) com PHP, ou seja, gerar relatórios com PHP.
 
 **Notas:** 
 * PHPJasper pode ser usado independente de seu Framework
-* Se você está usando uma versão menor que PHP 7.1 veja: [v1.16](https://github.com/PHPJasper/phpjasper/releases/tag/v1.16)
+* Forneça as permissões devidas aos arquivos dentro da pasta **vendor/copam/phpjasper7/src/JasperStarter/bin/** 
 
 ### Por quê preciso do PHPJasper?
 
@@ -89,7 +86,7 @@ Ou crie um arquivo 'composer.json' e adicione o trecho:
 ```json
 {
     "require": {
-        "geekcom/phpjasper": "^2.1"
+        "copam/phpjasper7": "^1.0"
     }
 }
 ```
@@ -106,7 +103,7 @@ E execute o comando:
 
 ### *Hello World* PHPJasper.
 
-Vá para o diretório de exemplos na raiz do repositório (`vendor/geekcom/phpjasper/examples`).
+Vá para o diretório de exemplos na raiz do repositório (`vendor/copam/phpjasper7/exemplos`).
 Abra o arquivo `hello_world.jrxml` com o JasperStudio ou seu editor favorito  e dê uma olhada no código.
 
 #### Compilando
@@ -121,7 +118,7 @@ require __DIR__ . '/vendor/autoload.php';
 
 use PHPJasper\PHPJasper;
 
-$input = __DIR__ . '/vendor/geekcom/phpjasper/examples/hello_world.jrxml';   
+$input = __DIR__ . 'vendor/copam/phpjasper7/exemplos/hello_world.jrxml';   
 
 $jasper = new PHPJasper;
 $jasper->compile($input)->execute();
@@ -138,8 +135,8 @@ require __DIR__ . '/vendor/autoload.php';
 
 use PHPJasper\PHPJasper;
 
-$input = __DIR__ . '/vendor/geekcom/phpjasper/examples/hello_world.jasper';  
-$output = __DIR__ . '/vendor/geekcom/phpjasper/examples';    
+$input = __DIR__ . 'vendor/copam/phpjasper7/exemplos/hello_world.jasper';  
+$output = __DIR__ . '/vendor/copam/phpjasper7/exemplos';    
 $options = [ 
     'format' => ['pdf', 'rtf'] 
 ];
@@ -153,7 +150,7 @@ $jasper->process(
 )->execute();
 ```
 
-Agora olhe a pasta **/examples** :) Ótimo trabalho? Você tem  2 arquivos, `hello_world.pdf` e `hello_world.rtf`.
+Agora olhe a pasta **/exemplos** :) Ótimo trabalho? Você tem  2 arquivos, `hello_world.pdf` e `hello_world.rtf`.
 
 #### Listando parâmetros
 
@@ -165,7 +162,7 @@ require __DIR__ . '/vendor/autoload.php';
 
 use PHPJasper\PHPJasper;
 
-$input = __DIR__ . '/vendor/geekcom/phpjasper/examples/hello_world_params.jrxml';
+$input = __DIR__ . 'vendor/copam/phpjasper7/exemplos/hello_world_params.jrxml';
 
 $jasper = new PHPJasper;
 $output = $jasper->listParameters($input)->execute();
@@ -221,7 +218,7 @@ use PHPJasper\PHPJasper;
 
 $input = '/your_input_path/your_report.jasper or .jrxml';   
 $output = '/your_output_path';
-$jdbc_dir = __DIR__ . '/vendor/geekcom/phpjasper/bin/jaspertarter/jdbc';
+$jdbc_dir = __DIR__ . 'vendor/copam/phpjasper7/exemplos/bin/jaspertarter/jdbc';
 $options = [
     'format' => ['pdf'],
     'locale' => 'pt_BR',
