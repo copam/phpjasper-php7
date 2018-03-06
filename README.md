@@ -10,7 +10,7 @@
 PHPJasper é a solução perfeita para compilar e processar relatórios Jasper (.jrxml & .jasper) com PHP, ou seja, gerar relatórios com PHP.
 
 **Notas:**
-* Versão para o PHP 7.1 em diante
+* Versão para o PHP 7.0 em diante
 * PHPJasper pode ser usado independente de seu Framework
 * Forneça as permissões devidas aos arquivos dentro da pasta **vendor/copam/phpjasper7/src/JasperStarter/bin/** 
 
