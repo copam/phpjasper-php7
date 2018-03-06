@@ -1,6 +1,6 @@
 <?php
 
-namespace Test;
+namespace PHPJasper\Test;
 
 use PHPUnit\Framework\TestCase;
 use PHPJasper\PHPJasper;
