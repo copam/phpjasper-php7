@@ -15,8 +15,6 @@ final class PHPJasperTest extends TestCase
      */
 {
     private $PHPJasper;
-    private $input;
-    private $output;
 
     public function setUp()
     {
