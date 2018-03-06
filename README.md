@@ -1,7 +1,7 @@
 # PHPJasper
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/geekcom/phpjasper/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/geekcom/phpjasper/?branch=master)
 [![Latest Stable Version](https://img.shields.io/packagist/v/geekcom/phpjasper.svg?style=flat-square)](https://packagist.org/packages/geekcom/phpjasper)
-[![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%207.1-blue.svg?style=flat-square)](https://php.net/)
+[![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%207.0-blue.svg?style=flat-square)](https://php.net/)
 [![License](https://poser.pugx.org/geekcom/phpjasper/license)](https://packagist.org/packages/geekcom/phpjasper) 
 
 ### Docs
@@ -12,7 +12,7 @@ PHPJasper is the best solution to compile and process JasperReports (.jrxml & .j
 
 **Notes:** 
 * PHPJasper Can be used regardless of your PHP Framework,
-* For PHP versions less than 7.1 see: [v1.16](https://github.com/PHPJasper/phpjasper/releases/tag/v1.16)
+* For PHP versions less than 7.0 see: [v1.16](https://github.com/PHPJasper/phpjasper/releases/tag/v1.16)
  
 
 
@@ -42,7 +42,7 @@ It is recommended using [Jaspersoft Studio](http://community.jaspersoft.com/proj
 
 ## Requirements
 
-* PHP 7.1 or above
+* PHP 7.0 or above
 * Java JDK 1.8
 
 ## Optional
